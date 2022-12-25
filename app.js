@@ -1,7 +1,11 @@
-const billAmount = document.getElementById("billAmount").innerHTML;
-const tipAmount = document.getElementById("tipAmount").innerHTML;
-const totalBill = document.getElementById("totalBill").innerHTML;
-const percentage = document.getElementById("myRange").innerHTML;
+const billAmount = document.getElementById("billAmount");
+const tipAmount = document.getElementById("tipAmount");
+const totalBill = document.getElementById("totalBill");
+const percentage = document.getElementById("myRange");
+const tipPercentageDisplay = document.getElementById("tipPercentageDisplay");
 
-tipAmount = billAmount * percentage;
-totalBill = billAmount + tipAmount;
+document.querySelector("#bill").onchange = function () {
+  tipPercentageDisplay.innerHTML = Number(percentage.value);
+  tipAmount.value = Number(billAmount.value) * (Number(percentage.value) / 100);
+  totalBill.value = Number(billAmount.value) + Number(tipAmount.value);
+};
