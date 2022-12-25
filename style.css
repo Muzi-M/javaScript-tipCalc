@@ -1,0 +1,29 @@
+body {
+  background-color: cornflowerblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  text-align: center;
+}
+
+.calculator {
+  border: 3px solid;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background-color: white;
+  padding: 5px;
+}
+
+.inputField {
+  width: 200px;
+  padding: 5px;
+  border-radius: 2em;
+}
+
+.slider {
+  margin-top: 20px;
+}
